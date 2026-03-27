@@ -1,35 +1,93 @@
 ---
-title: Home
 layout: home
+title: Home page
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# CSC Learning Template
+This is the official template for creating clean, branded self-learning course sites. By using this template, you ensure that your training materials match the **CSC** and **LUMI AI Factory** visual identity automatically.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+For a quick overview of the Markdown syntax elements refer to [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
-More specifically, the created site:
+---
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## 📄 Add more pages
+1. **Create a new page:** `index.md` is the 'landing page' of the website, do not rename it. You can easily add more pages by making new `.md` files in the root or in a subfolder. To remove chapter1 page, simply delete `chapter1.md`.
+2. **Add front matter:** Every page needs these lines at the top:
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+```yaml
+---
+layout: home
+title: Home page
+nav_order: 1
+---
+```
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+Where: 
+- `layout` should be 'home' for `index.md` and 'default' for other pages;
+- `title` is the name of the page;
+- `nav_order` defines the order in which the extra pages are listed on the left side.
 
-To get started with creating a site, simply:
+## 🎨 Branded Boxes
+You can use special "Callout Boxes" to highlight information for your students as follows:
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+{: .note }
+> **LUMI Purple (Note)**
+>
+> Use this for additional context or general helpful information.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+{: .warning }
+> **LUMI Magenta (Warning)**
+>
+> Use this for critical warnings, security notices, or common errors to avoid.
 
-----
+---
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+## 💻 Technical Content
+* **Sidebar Links:** Navigation links will turn Purple when you hover over them.
+* **Inline Commands:** Use backticks to show code like `srun --pty bash`.
+* **Code blocks** Use triple backticks to show multiline blocks of code. When user hovers over it, the copy button appears. You must have an empty line before and after the block as such: 
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+```python
+import math
+
+result = math.sqrt(25)
+print(f"The calculation result is: {result}")
+```
+
+---
+
+## Embedding a picture
+To add an image, place it in `assets/images/` and use this syntax:
+
+![Description of the image](assets/images/spring-school.jpg)
+
+To add an image with a caption underneath and resize the image use this simple HTML:
+<figure style="text-align: left;">
+  <img src="assets/images/summer-school.jpg" style="width: 50%;">
+  <figcaption><i>Figure 1: Spring School on Computational Chemistry 2024.</i></figcaption>
+</figure>
+
+---
+
+## Embedding a YouTube video
+To add a video, simply copy the **Embed code** from YouTube (Share > Embed) and paste it into the `.md` file.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aLae9Sd2oos?si=uJ_6ccR3ArrpVXqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+## 🧪 Mathematical Formulas
+You can write beautiful LaTeX formulas easily using [MathJax](https://just-the-docs.github.io/just-the-docs-tests/components/math/mathjax/tests/):
+
+- **Inline math:** $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
+- **Block math:** 
+
+$$
+\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+$$
+
+---
+
+## 🛠️ Need Help?
+If you have questions or suggestions on how to improve the template or instructions, please reach out to me on RocketChat: Artúr Vojt-Antal
