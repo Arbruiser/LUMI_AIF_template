@@ -93,3 +93,18 @@ iframe[src*="youtube-nocookie.com"] {
   border-radius: 8px;
   margin: 1.5rem 0;
 }
+
+// 8. Sidebar Navigation (Forced Override)
+.site-nav .nav-list-link:hover,
+.site-nav .nav-list-item:hover > .nav-list-link {
+  color: $LUMI-magenta !important; 
+  /* Using the shorthand 'background' destroys any gradients the theme is hiding */
+  background: rgba($LUMI-blue, 0.1) !important; 
+}
+
+.site-nav .nav-list-link.active,
+.site-nav .nav-list-item.active > .nav-list-link {
+  color: $LUMI-magenta !important; 
+  font-weight: 600 !important; 
+  background: rgba($LUMI-blue, 0.05) !important; 
+}
