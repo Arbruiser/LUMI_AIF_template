@@ -19,7 +19,7 @@ $light-grey:        #EFF0F1; // generic neutral backgrounds
 $brand-color:         $LUMI-blue;
 $link-color:          $LUMI-blue;
 $body-text-color:     $LUMI-black;
-$nav-child-link-color: $LUMI-magenta;
+$nav-child-link-color: $LUMI-blue;
 $sidebar-color: $very-light-purple;
 
 
@@ -99,16 +99,17 @@ iframe[src*="youtube-nocookie.com"] {
 }
 
 // 8. Sidebar Navigation
-.side-bar {
+.site-nav {
   // Styles for hovering over a link in the sidebar
   .nav-list-link:hover {
     color: $LUMI-magenta !important; 
-    background-color: rgba($LUMI-blue, 0.05) !important; // Adds a subtle highlight behind the text
+    background-color: rgba($LUMI-blue, 0.1) !important; // The highlight behind the text
   }
 
   // Styles for the "current page" you are actively viewing
   .nav-list-link.active {
     color: $LUMI-magenta !important; 
-    font-weight: 600 !important; // Makes the current page text a bit bolder
+    font-weight: 600 !important; 
+    background-color: rgba($LUMI-blue, 0.05) !important; // Optional: leaves a faint highlight on the active page
   }
 }
