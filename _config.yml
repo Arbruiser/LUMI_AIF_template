@@ -10,7 +10,7 @@ heading_anchors: true      # Makes it easy for people to link to specific sectio
 
 # Link(s) in the top right
 aux_links:
-  "CSC Website": "https://research.csc.fi/"
+  "LUMI AIF Website": "https://lumi-ai-factory.eu/"
 
 # GitHub Integration
 gh_edit_repository: "https://github.com/{{ site.github.repository_nwo }}"
