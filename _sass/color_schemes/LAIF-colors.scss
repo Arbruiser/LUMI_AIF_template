@@ -83,7 +83,6 @@ div.highlighter-rouge {
 
   &:hover {
     background-color: $light-blue !important;
-    background-image: none !important; /* Kills the default theme gradient */
     color: $LUMI-magenta !important;
   }
 }
