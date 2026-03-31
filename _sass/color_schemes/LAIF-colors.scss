@@ -123,9 +123,4 @@ iframe[src*="youtube-nocookie.com"] {
   }
 }
 
-// 9. Site Title / Logo Button
-.site-header .site-title:hover {
-  background: $light-purple !important; /* Forces your solid purple */
-  /* If you also want the text to turn magenta on hover, uncomment the line below */
-  // color: $LUMI-magenta !important; 
-}
+.site-header .site-title:hover {background: $light-purple !important;} // logo button hover colour
