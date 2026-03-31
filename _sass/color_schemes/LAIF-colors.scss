@@ -72,14 +72,14 @@ div.highlighter-rouge {
 }
 
 .aux-nav-list-item a {
-  background-color: $very-light-blue !important;
+  background-color: $sidebar-color !important;
   background-image: none !important; /* Kills the default theme gradient */
   box-shadow: none !important; /* Removes any default theme drop-shadows */
   padding: 6px 15px !important;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 500;
-  border: 1px solid rgba($LUMI-blue, 0.1) !important;
+  border: 2px solid rgba($LUMI-blue, 0.1) !important;
 
   &:hover {
     background-color: $light-blue !important;
