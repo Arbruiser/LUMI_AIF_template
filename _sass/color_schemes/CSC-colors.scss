@@ -1,23 +1,26 @@
-// 1. CSC & LUMI Brand Palette
-$csc-blue:    #02284F;
-$csc-light-blue: #ABCFEF; 
-$very-light-blue: #f1f8fd;
-$csc-green: #005260;
-$csc-light-green:  #B0DCBA;
-$very-light-green: #f5fff8;
-$csc-red: #830051;
-$very-light-red: #fdf6f6;
-$csc-black:    #002930;
-$csc-light-grey: #EFF0F1;
-$white:       #ffffff;
+// 1. LUMI Brand Palette
+$LUMI-white:       #ffffff; // Main colour
+$LUMI-black:       #231f20; // Main colour
+$LUMI-purple:      #7477b8; // Additional colour
+$LUMI-blue:        #2c6789; // Additional colour
+$LUMI-magenta:     #ec008c; // Effect colour
 
+// Derived lighter shades for backgrounds and borders (Mixes with white)
+$light-blue:        mix(#ffffff, $LUMI-blue, 60%); 
+$very-light-blue:   mix(#ffffff, $LUMI-blue, 95%);
+$light-purple:      mix(#ffffff, $LUMI-purple, 60%);
+$very-light-purple: mix(#ffffff, $LUMI-purple, 92%);
+$light-magenta:     mix(#ffffff, $LUMI-magenta, 60%);
+$very-light-magenta: mix(#ffffff, $LUMI-magenta, 95%);
+
+$light-grey:        #EFF0F1; // generic neutral backgrounds
 
 // 2. Theme Variables
-$brand-color:         $csc-blue;
-$link-color:          $csc-blue;
-$body-text-color:     $csc-black;
-$nav-child-link-color: $csc-red;
-$sidebar-color: $very-light-blue;
+$brand-color:         $LUMI-blue;
+$link-color:          $LUMI-blue;
+$body-text-color:     $LUMI-black;
+$nav-child-link-color: $brand-magenta;
+$sidebar-color: $very-light-magenta;
 
 
 // 3. Branded Callouts (Notes & Warnings)
@@ -26,32 +29,32 @@ $sidebar-color: $very-light-blue;
   padding: 1rem 1.5rem;
   blockquote { margin: 0; border-left: none; padding: 0; color: inherit; }
 }
-.note { border: 1px solid $csc-light-green; border-left: 6px solid $csc-light-green; background-color: $very-light-green;}
-.warning { border: 1px solid $csc-red; border-left: 6px solid $csc-red; background-color: $very-light-red;}
+.note { border: 1px solid $light-purple; border-left: 6px solid $LUMI-purple; background-color: $very-light-purple;}
+.warning { border: 1px solid $light-magenta; border-left: 6px solid $LUMI-magenta; background-color: $very-light-magenta;}
 
 
 // 4. Interactive Elements
 :not(pre) > code {
-  color: $csc-green !important;
-  background-color: $csc-light-grey !important;
+  color: $LUMI-purple !important;
+  background-color: $light-grey !important;
   padding: 2px 4px;
   border-radius: 3px;
 }
 
 a:hover {
-  color: $csc-green !important;
+  color: $LUMI-magenta !important;
   text-decoration: underline;
 }
 
 
-// 5. Code Blocks (Ice Blue with CSC green border)
+// 5. Code Blocks
 div.highlighter-rouge {
   margin: 1.5rem 0 !important;
   width: fit-content !important;
   min-width: min(100%, 450px) !important;
   max-width: 100% !important;
   background-color: $very-light-blue !important;
-  border: 1px solid $csc-light-blue !important;
+  border: 1px solid $light-blue !important;
   border-radius: 6px !important;
 
   .highlight {
@@ -69,15 +72,16 @@ div.highlighter-rouge {
 }
 
 .aux-nav-list-item a {
-  background-color: rgba($csc-blue, 0.05) !important;
+  background-color: rgba($LUMI-blue, 0.05) !important;
   padding: 6px 15px !important;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 500;
-  border: 1px solid rgba($csc-blue, 0.1);
+  border: 1px solid rgba($LUMI-blue, 0.1);
 
   &:hover {
-    background-color: $csc-green !important;
+    background-color: $LUMI-purple !important;
+    color: $LUMI-white !important;
   }
 }
 
