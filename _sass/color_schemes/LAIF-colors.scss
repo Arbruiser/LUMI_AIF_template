@@ -98,3 +98,17 @@ iframe[src*="youtube-nocookie.com"] {
   margin: 1.5rem 0;
 }
 
+// 8. Sidebar Navigation
+.side-bar {
+  // Styles for hovering over a link in the sidebar
+  .nav-list-link:hover {
+    color: $LUMI-magenta !important; 
+    background-color: rgba($LUMI-blue, 0.05) !important; // Adds a subtle highlight behind the text
+  }
+
+  // Styles for the "current page" you are actively viewing
+  .nav-list-link.active {
+    color: $LUMI-magenta !important; 
+    font-weight: 600 !important; // Makes the current page text a bit bolder
+  }
+}
