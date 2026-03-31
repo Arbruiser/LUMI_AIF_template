@@ -95,25 +95,3 @@ iframe[src*="youtube-nocookie.com"] {
   border-radius: 8px;
   margin: 1.5rem 0;
 }
-
-
-// 8. Sidebar Navigation Links
-// Background of NOT current pages
-.nav-list-link {
-  background-color: transparent; // Keeps it clean over your purple sidebar
-  color: $LUMI-black;
-
-  &:hover {
-    background-color: rgba($LUMI-blue, 0.05) !important; // Slight blue hover
-    color: $LUMI-magenta !important;
-  }
-}
-
-// Background of the CURRENT active page
-.nav-list-item.active > .nav-list-link,
-.nav-list-link.active {
-  background-color: $light-purple !important; // Makes the current page stand out
-  color: $LUMI-blue !important;
-  font-weight: 600 !important;
-  border-radius: 4px; // Optional: gives the active item nice rounded corners
-}
