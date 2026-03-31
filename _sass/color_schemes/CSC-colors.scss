@@ -6,12 +6,12 @@ $LUMI-blue:        #2c6789; // Additional colour
 $LUMI-magenta:     #ec008c; // Effect colour
 
 // Derived lighter shades for backgrounds and borders (Mixes with white)
-$light-blue:        mix(#ffffff, $LUMI-blue, 60%); 
-$very-light-blue:   mix(#ffffff, $LUMI-blue, 95%);
-$light-purple:      mix(#ffffff, $LUMI-purple, 60%);
-$very-light-purple: mix(#ffffff, $LUMI-purple, 92%);
-$light-magenta:     mix(#ffffff, $LUMI-magenta, 60%);
-$very-light-magenta: mix(#ffffff, $LUMI-magenta, 95%);
+$light-blue:        #abc2d0; 
+$very-light-blue:   #f4f7f9;
+$light-purple:      #c7c9e3;
+$very-light-purple: #f4f4f9;
+$light-magenta:     #f799d1;
+$very-light-magenta: #fef2f9;
 
 $light-grey:        #EFF0F1; // generic neutral backgrounds
 
