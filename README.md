@@ -9,7 +9,7 @@ This is a template to create a [Jekyll] site that:
 
 To get started with creating a site, simply:
 
-1. click "[use this template]" to create a GitHub repository, name it appropriately for the materials
+1. click [use this template] to create a GitHub repository, name it appropriately for the materials
 2. edit the index.md file and add your content there 
 3. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
 4. Go to the main page of your repository. On the right side, click the Gear Icon next to "About." Check the box that says "Use your GitHub Pages website" and click Save.
